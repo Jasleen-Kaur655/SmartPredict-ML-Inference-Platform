@@ -1,68 +1,48 @@
-# SmartPredict ML Inference Platform 🚀
-**Cloud-Based ML Inference Platform for Predictive Analytics**
+# SmartPredict ML Inference Platform
 
-## Project workflow & architecture
-![Flowchart](images/flowchart.png)  
+A Full-Stack, Cloud-Deployed ML Inference Platform with Secure Authentication & Interactive Predictions
+
+## Overview
+
+This project is a cloud-based ML inference platform that allows users to:
+
+- Log in securely with JWT-based authentication
+- Upload datasets or input numeric features for predictions
+- Perform predictions using integrated ML models
+- View results with interactive charts and graphs
+- Test APIs directly via Swagger UI
+- Deploy easily with Docker and CI/CD pipelines
 
 
-![Output Example](images/output.png)  
-*Example: Model predicting with graph successfully.*
+## Project Workflow & Architecture
+![Flowchart](images/flowchart.png)
 
-![Backend API - Swagger UI](images/swagger_ui.png)  
-*Backend RESTful API documented and accessible via Swagger UI.*
 
----
+## Screenshots
 
-## 🔹 Project Overview
+## Output Example 
 
-SmartPredict ML Inference Platform is a **full-stack, cloud-ready machine learning system** that enables users to perform predictions through a **secure web interface** without installing Python or ML libraries locally.  
+![Output Example](images/output.png)
 
-Key highlights:  
-- **End-to-end ML pipeline** from data input to prediction  
-- **CI/CD enabled** with GitHub Actions for automated deployment  
-- **Secure authentication & authorization** for safe user access  
-- **Scalable architecture** supporting multiple users  
-- **Interactive visualization** of prediction results  
+## Backend API - Swagger UI
 
----
+![Backend API - Swagger UI](images/swagger_ui.png) 
 
-## 🏗️ Architecture & Workflow
+## Features
 
-**Tech Stack & Components:**  
-| Layer | Technology | Description |
-|-------|------------|-------------|
-| Frontend | React.js | Responsive user interface for uploading input and viewing predictions |
-| Backend | FastAPI | RESTful API endpoints for model inference |
-| Database | Optional (SQL/NoSQL) | Store user data and prediction history |
-| ML Model | Scikit-learn / joblib | Pre-trained predictive model with fast inference |
-| DevOps / CI/CD | Docker, GitHub Actions | Automated testing, build, and deployment pipeline |
-| Cloud | AWS / GCP | Cloud-ready deployment for global access |
-| Security | JWT Authentication / HTTPS | Secure access and encrypted communication |
-
-**Workflow:**  
-1. User uploads data via the **React frontend**.  
-2. Data is sent to **FastAPI backend**.  
-3. Backend loads the **ML model (`model.joblib`)** and performs prediction.  
-4. Prediction results are returned to the frontend with **graphical visualization**.  
-5. CI/CD pipeline automatically tests and deploys new updates to production.  
+- **User Authentication & Authorization**: Secure login with JWT tokens  
+- **ML Model Integration**: Extensible architecture to add multiple ML models  
+- **Interactive Predictions**: Visualized results with charts and graphs  
+- **API Documentation**: Professional Swagger UI documentation for backend endpoints  
+- **Dockerized Backend & Frontend**: Simplifies deployment and scalability  
+- **CI/CD Ready**: Automated GitHub Actions pipeline for testing and deployment  
+- **Cloud Ready**: Designed for AWS/GCP deployment with secure storage & networking  
 
 ---
 
-## ⚡ Features & Key Highlights
+## Installation & Run Locally
 
-- ✅ **Cloud-deployed ML inference platform**  
-- ✅ **CI/CD pipeline** for automated testing, building, and deployment  
-- ✅ **Secure authentication & authorization** (JWT/Token-based access)  
-- ✅ **Interactive charts & graphical visualization** of predictions  
-- ✅ **Scalable architecture** for multiple users  
-- ✅ **Dockerized backend & frontend** for easy deployment  
-- ✅ **Extensible ML model integration** for future enhancements  
-
----
-
-## 📦 Installation & Run Locally
-
-1. **Clone the repository**  
+### Clone the Repository
 ```bash
 git clone https://github.com/Jasleen-Kaur655/SmartPredict-ML-Inference-Platform.git
 cd SmartPredict-ML-Inference-Platform
@@ -71,12 +51,16 @@ cd SmartPredict-ML-Inference-Platform
 
 cd backend
 python -m venv venv
+
 # Linux/macOS
 source venv/bin/activate
+
 # Windows
 venv\Scripts\activate
+
 pip install -r requirements.txt
 uvicorn main:app --reload
+
 
 ## Frontend setup
 
