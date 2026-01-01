@@ -1,0 +1,19 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
