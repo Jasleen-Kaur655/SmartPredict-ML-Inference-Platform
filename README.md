@@ -1,0 +1,105 @@
+# SmartPredict ML Inference Platform
+
+A **Full-Stack, Cloud-Deployed ML Inference Platform** with **Secure Authentication** & **Interactive Predictions**
+
+---
+
+##  Overview
+
+SmartPredict is a cloud-based ML inference platform that allows users to:
+
+- Securely log in using **JWT-based authentication**
+- Upload datasets or input numeric features for predictions
+- Run predictions using integrated **Machine Learning models**
+- Visualize results using **interactive charts and graphs**
+- Test APIs directly using **Swagger UI**
+- Deploy easily using **Docker & CI/CD pipelines**
+
+---
+
+## Project Workflow & Architecture
+
+![Flowchart](images/flowchart.png)
+
+---
+
+## ✨ Features
+
+- **User Authentication & Authorization**
+  - Secure login using JWT tokens
+
+- **ML Model Integration**
+  - Extensible backend architecture for multiple models
+
+- **Interactive Predictions**
+  - Real-time visualizations with charts & graphs
+
+- **API Documentation**
+  - Swagger UI for easy testing & integration
+
+- **Dockerized Frontend & Backend**
+  - Simplified deployment and scalability
+
+- **CI/CD Ready**
+  - GitHub Actions pipeline for automated testing & deployment
+
+- **Cloud Ready**
+  - Designed for AWS / GCP with secure storage & networking
+
+---
+
+## Screenshots
+
+### 🔹 Prediction Output
+![Output Example](images/output.png)
+
+### 🔹 Backend API – Swagger UI
+![Backend API - Swagger UI](images/swagger_ui.png)
+
+---
+
+## 🛠️ Installation & Run Locally
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Jasleen-Kaur655/SmartPredict-ML-Inference-Platform.git
+cd SmartPredict-ML-Inference-Platform
+
+2️⃣ Backend Setup
+cd backend
+python -m venv venv
+
+Activate Virtual Environment
+
+Linux / macOS
+
+source venv/bin/activate
+
+
+Windows
+
+venv\Scripts\activate
+
+Install Dependencies & Run Backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+
+Backend runs at:
+
+http://127.0.0.1:8000
+
+
+Swagger UI:
+
+http://127.0.0.1:8000/docs
+
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm start
+
+
+Frontend runs at:
+
+http://localhost:3000
