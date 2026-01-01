@@ -1,9 +1,9 @@
-# SmartPredict ML Inference Platform S🚀
-
+# SmartPredict ML Inference Platform 🚀
 **Cloud-Based ML Inference Platform for Predictive Analytics**
 
+## Project workflow & architecture
 ![Flowchart](images/flowchart.png)  
-*Project workflow & architecture.*
+
 
 ![Output Example](images/output.png)  
 *Example: Model predicting with graph successfully.*
