@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ML Predictor</title>
+</head>
+<body>
+  <h2>ML Prediction</h2>
+  <input id="value" placeholder="Enter number">
+  <button onclick="predict()">Predict</button>
+  <p id="result"></p>
+
+  <script>
+    async function predict() {
+      const value = document.getElementById("value").value;
+      const res = await fetch("http://localhost:8000/predict", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer mysecrettoken"
+        },
+        body: JSON.stringify({ feature: Number(value) })
+      });
+      const data = await res.json();
+      document.getElementById("result").innerText =
+        "Prediction: " + data.prediction;
+    }
+  </script>
+</body>
+</html>
